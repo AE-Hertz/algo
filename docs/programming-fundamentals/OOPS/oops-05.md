@@ -451,7 +451,21 @@ public class Main {
 <summary><strong>JavaScript Code</strong></summary>
 
 ```js
+class Animal {
+    sound() { // Base class method
+        console.log("Animal sound");
+    }
+}
 
+class Dog extends Animal {
+    sound() { // Override method
+        console.log("Woof!");
+    }
+}
+
+// Main code
+const animal = new Dog(); // Reference to base class
+animal.sound(); // Calls Dog's sound method, Output: Woof!
 ```
 </details>
 
